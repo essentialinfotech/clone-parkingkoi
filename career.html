@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parking Kothay</title>
+	<meta name="title" content="Parking Kothay | Vehicle parking service provider">
+	<meta name="description" content="Parking Kothay is a Vehicle parking service provider.">
+	<meta name="author" content="Essential Infotech">
+	<meta name="keywords" content="Parking, Car, Rent, Parking Kothay">
+
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://parkingkothay.com">
+	<meta property="og:title" content="Parking Kothay | Vehicle parking service provider">
+	<meta property="og:description" content="Parking Kothay is a Vehicle parking service provider.">
+
+	<meta property="og:image" content="./assets/img/logo.png">
+
+	<meta property="twitter:card" content="Parking Kothay">
+	<meta property="twitter:url" content="https://parkingkothay.com">
+	<meta property="twitter:title" content="Parking Kothay | Vehicle parking service provider">
+	<meta property="twitter:description" content="Parking Kothay is a Vehicle parking service provider.">
+	<meta property="twitter:image" content="./assets/img/logo.png">
+	<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+	<!-- owl carousel theme -->
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+	<!-- custom style -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/find-parking-place.css" rel="stylesheet">
+	<link href="assets/css/career.css" rel="stylesheet">
+	<link href="assets/css/our-solution.css" rel="stylesheet">
+	<link href="assets/css/list-parking.css" rel="stylesheet">
+	<link href="assets/css/request-parking.css" rel="stylesheet">
+	<link href="assets/css/service.css" rel="stylesheet">
+	<style>
+		input::-webkit-inner-spin-button,
+		input::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+		}
+
+		input[type="number"] {
+			-moz-appearance: textfield;
+		}
+	</style>
+
+	<!-- data table link -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+
+
+
+	<!-- ############################################################################################## -->
+
+</head>
+
+<body>
+
+
+	<header>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-md col-lg-10 offset-lg-1 col-md-12 fixed-top navbar-dark">
+				<!-- Brand -->
+				<a class="navbar-brand animate__animated animate__bounce animate__delay-2s" href="index.html"><img
+						src="assets/img/logo.png"></a>
+
+
+				<!-- Toggler/collapsibe Button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<!-- Navbar links -->
+                <div class="collapse navbar-collapse navbar-dark" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link link-a1" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link link-a2" href="solution.html">Features</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link link-a3" href="find-parking.html">Location</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link link-a4" href="list-parking.html">Parking Options</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link link-a5" href="career.html">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link link-a6" href="request.html">Request Parking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-a6 ml-2" href="https://api.parkingkothay.com">Login</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+			</nav>
+		</div>
+	</header>
+	<style>
+		.shoppingCart>section.stickyHeader {
+
+			top: calc(110px + 30%);
+			position: fixed;
+			width: 65px;
+			height: 75px;
+			background: #50b673;
+			right: 0;
+		}
+
+		@media only screen and (max-device-width: 480px) {
+			div.container {
+				padding-right: 16%
+					/*overrides*/
+			}
+
+			.shoppingCart>section.stickyHeader {
+
+				top: calc(110px + 10%);
+			}
+		}
+	</style>
+
+	<div class=" shoppingCart">
+		<section class="stickyHeader">
+			<a href="Cart" class="nav-link waves-effect" style="color:black;">
+				<!-- onclick="openCartNav()" -->
+				<i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart" style="top: calc(110px + 30%);"></i>
+				<span class="badge red z-depth-1 mr-1"><span id="cart_number">0</span> </span>
+				<span class="sr-only">Cart </span>
+			</a>
+		</section>
+	</div><br>
+
+
+	<div class="upper-space"></div>
+
+	<!-- ....................section 1....................... -->
+
+
+	<section class="join-us-career">
+		<img class="w-100" src="./assets/img/career.png" alt="">
+	</section>
+
+
+
+
+
+	<div id="job" style="scroll-behavior: smooth; padding-bottom: 30px;">
+
+	</div>
+
+
+	<!-- ......................section 2 Data Table ............................ -->
+
+	<section class="career-table py-3 pb-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-responsive">
+						<table id="example" class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>Sl</th>
+									<th>Job Title</th>
+									<th>type</th>
+									<th>Vacancy</th>
+									<th>Job location</th>
+									<th width="14%">Detail</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>
+										<p id="job_title">Jr. Graphics Designer</p>
+									</td>
+									<td>Full Time</td>
+									<td align="center">1</td>
+									<td align="center">Merul Badda, Dhaka</td>
+									<td align="center"><a href="career-details.html" target="_blank"><button
+												type="submit" id="see-details">See
+												Details</button></a></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>
+										<p id="job_title"> Operations Manager - Call Center</p>
+									</td>
+									<td>Full Time</td>
+									<td align="center">1</td>
+									<td align="center">Dhaka</td>
+									<td align="center"><a href="career-details.html" target="_blank"><button
+												type="submit" id="see-details">See
+												Details</button></a></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>
+										<p id="job_title">Operation Manager (AutoMobile)</p>
+									</td>
+									<td>Full Time</td>
+									<td align="center">1</td>
+									<td align="center">Dhaka</td>
+									<td align="center"><a href="career-details.html" target="_blank"><button
+												type="submit" id="see-details">See
+												Details</button></a></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>
+										<p id="job_title">Sales Executive</p>
+									</td>
+									<td>Full Time</td>
+									<td align="center">1</td>
+									<td align="center">Dhaka</td>
+									<td align="center"><a href="career-details.html" target="_blank"><button
+												type="submit" id="see-details">See
+												Details</button></a></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>
+										<p id="job_title">Field Officer</p>
+									</td>
+									<td>Full Time</td>
+									<td align="center">10</td>
+									<td align="center">Dhaka</td>
+									<td align="center"><a href="career-details.html" target="_blank"><button
+												type="submit" id="see-details">See
+												Details</button></a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+	<!-- ....................section 3 | About Career....................... -->
+
+	<section class="about-career">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="about-career-content">
+						<h2>Why Parking Kothay?</h2>
+						<br>
+
+						<p>
+							Parking Kothay Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem repudiandae
+							incidunt qui in, nihil dicta excepturi! Incidunt consequuntur doloremque deserunt quis
+							voluptatibus magni ad sint magnam, at, repudiandae sit harum.
+							<br>
+							<br>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis minus, qui animi alias
+							obcaecati magnam, et minima vitae nulla, omnis maiores dicta fuga ab. Nemo alias molestiae
+							ipsa maxime officiis?
+							<br>
+							<br>
+							<br>
+
+							<a href="#job" class="join-us-btn">Apply today!</a>
+						</p>
+
+						<!-- <button class="join-us-btn">See available roles</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- ....................section 4 videos....................... -->
+	<section class="video-area">
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-6 p-2">
+					<iframe width="100%" height="200" src="https://www.youtube.com/embed/t2tyn9zK228" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+
+
+				<div class="col-md-4 col-sm-4 col-6 p-2">
+					<iframe width="100%" height="200" src="https://www.youtube.com/embed/t2tyn9zK228" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+
+
+				<div class="col-md-4 col-sm-4 col-12 p-2">
+					<iframe width="100%" height="200" src="https://www.youtube.com/embed/t2tyn9zK228" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+
+
+
+
+	<!-- .................... section 5 | Our Team ....................... -->
+
+	<section class="our-team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="our-team-content">
+						<h2>Our Mission</h2>
+						<br>
+
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae dolorem tenetur
+							dolores ullam, cupiditate earum voluptates ab deserunt qui ad libero doloribus nam quae
+							provident recusandae debitis, quidem itaque!Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Nostrum beatae dolorem tenetur
+							dolores ullam, cupiditate earum voluptates ab deserunt qui ad libero doloribus nam quae
+							provident recusandae debitis, quidem itaque!
+						</p>
+
+						<br>
+						<br>
+
+						<!-- <button class="join-us-btn">See available roles</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- .................... section 6 | CEO ....................... -->
+	<section class="ceo-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-12">
+					<img src="assets/img/mak.png" class="media-object img-fluid mx-auto">
+				</div>
+				<div class="col-md-9 col-sm-9 col-12 ceo-content">
+					<br>
+					<p>“Parking Kothay is not just a company. It’s our dream come true. But we have still a lot more to
+						do
+						& a long way to go. With your support & allegiance we can ensure a better future for Bangladesh
+						& park away the ever growing traffic problem once & for all”</p>
+
+					<h5 class="media-heading">Mustafizur Rahman Khan</h5><span>– CEO & Founder</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- .................... section 7 | Parking Kothay ....................... -->
+
+	<section class="parkingkoi">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="parkingkoi-content">
+						<h2>What does Parking Kothay Family believe in?</h2>
+						<br>
+
+						<h6>01. The Mission</h6>
+						<p>We fight for the mission with our soldiers; the Parking Kothay
+							family
+							of customers & employees; & dream of a Bangladesh where parking is easy, safe & cheap.</p>
+
+						<h6>02. Family First</h6>
+						<p>Parking Kothay is more than a company. It is a growing family of 2
+							million people across the country. If you’re a part of this family then remember just as you
+							love your vehicle like your own child, we excel at keeping that child safe from harms way
+							with the most innovative parking & automotive solutions.</p>
+
+						<h6>03. Empowering Entrepreneurship</h6>
+						<p>Other than securing safe parking spots & providing automotive
+							solutions, we are creating entrepreneurs in every home. You can earn from USD 2000-3500 i.e.
+							16000-24000 TK every month just renting out your parking space.</p>
+
+						<h6>04. Change Maker</h6>
+						<p>We believe we are the change maker Bangladesh needs to tackle the
+							ever-growing traffic & parking problem. This company’s ongoing effort to solve these two
+							major issues will impact both national & global economy. Our initiative will soon put
+							Bangladesh’s Start Up success story on the global map.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- .................... section 8 | Team Gallery....................... -->
+	<section class="team-gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="owl-carousel career-slide owl-theme">
+
+						<div class="item"> <!-- item 1 -->
+							<div class="card">
+								<img class="img-fluid" src="assets/img/man.png" alt="Not loaded">
+								<div class="card-body" align="center">
+									<h6 class="text-dark">Ridoy Ahmed Khan</h6>
+									<p class="text-dark text-muted">Business Development Officer</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="item"> <!-- item 2 -->
+							<div class="card">
+								<img class="img-fluid" src="assets/img/man.png" alt="Not loaded">
+								<div class="card-body" align="center">
+									<h6 class="text-dark">Ridoy Ahmed Khan</h6>
+									<p class="text-dark text-muted">Backend Developer</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="item"> <!-- item 3 -->
+							<div class="card">
+								<img class="img-fluid" src="assets/img/man.png" alt="Not loaded">
+								<div class="card-body" align="center">
+									<h6 class="text-dark">Ridoy Ahmed Khan</h6>
+									<p class="text-dark text-muted">Frontend Developer</p>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="item"> <!-- item 4 -->
+							<div class="card">
+								<img class="img-fluid" src="assets/img/man.png" alt="Not loaded">
+								<div class="card-body" align="center">
+									<h6 class="text-dark">Ridoy Ahmed Khan</h6>
+									<p class="text-dark text-muted">Head of IT</p>
+								</div>
+							</div>
+						</div><!-- ...item... -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- ......................section 9 Benifits ............................ -->
+	<section class="benefits">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="our-team-content">
+						<h2>Benefits</h2>
+						<br>
+
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At possimus tenetur officiis
+							repudiandae. Nostrum totam id exercitationem a, dolores nisi, ut nihil, explicabo obcaecati
+							sunt mollitia voluptatem doloribus porro! Iste voluptatum exercitationem sit voluptas modi
+							sunt autem quidem quisquam consectetur beatae? Ipsam explicabo blanditiis, modi vitae, fugit
+							ipsum ea nulla, qui atque cupiditate dignissimos consectetur odit molestiae quam. Facere,
+							dolores accusamus voluptates assumenda, consequatur quia in quae illo, tempora alias
+							temporibus recusandae. Suscipit, beatae odit? Atque vero maxime aut cum, perferendis minus
+							sed officiis illo non, eveniet placeat! Fugiat ea vitae explicabo maiores. Temporibus ipsa
+							facere nesciunt enim unde eveniet!</p>
+
+						<br>
+						<br>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<div class="container app-links jumbotron my-1">
+		<div class="row ">
+			<div class="col-md-12" align="center">
+				<div class="pb-3">
+					<h4>Download The App</h4>
+					<p>Downloading the app, you will have access to hourly & monthly parking separately and you can also
+						list your place in the app for renting.</p>
+				</div>
+
+				<div style="display: inline-block;">
+					<a href="#" target="_blank">
+						<img src="assets/img/google_play_store.png">
+					</a>
+
+					<a href="#" target="_blank">
+						<img class="ml-3" src="assets/img/app-store-logo.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function openCartNav() {
+			document.getElementById("cart_sidenav").style.width = "360px";
+		}
+
+		function closeCartNav() {
+			document.getElementById("cart_sidenav").style.width = "0";
+		}
+
+
+	</script>
+
+	<script type="text/javascript">
+		function hapus_krs(value) {
+			var formData = {
+				'id': value
+			};
+			var quantity = 1;
+			$.ajax({
+				url: 'home/add_to_cart',
+				type: "post",
+				data: { "id": value, "qty": quantity },
+				success: function (data) {
+					//$("#local").html(data);
+					alert('Item Added');
+					//Alert.render('Adding Item to Cart.');
+					$("#cart_number").load(" #cart_number");
+					$("#cart_table").load(" #cart_table");
+				},
+				error: function (XMLHttpRequest, textStatus, errorThrown) {
+				}
+			});
+		};
+	</script>
+
+	<script>
+
+		$(document).on('click', '.remove_inventory', function () {
+			var row_id = $(this).attr("id");
+			if (confirm("Are you sure you want to remove this?")) {
+				$.ajax({
+					url: "home/remove",
+					method: "POST",
+					data: { row_id: row_id },
+					success: function (data) {
+						alert("Product removed from Cart");
+						$("#cart_number").load(" #cart_number");
+						$("#cart_table").load(" #cart_table");
+
+					}
+				});
+			}
+			else {
+				return false;
+			}
+		});
+	</script>
+
+	<!-- Map Area section  -->
+	<section class="map-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 py-3" align="center">
+					<h2>Parking Kothay HQ</h2>
+				</div>
+			</div>
+
+			<div class="row py-3">
+				<div class="col-md-6">
+					<div class="parkingkothay-address">
+
+						<u>Address</u>
+						<address> Garib-E-Newaz Avenue,<br>
+							Sector#13, Uttara, Dhaka 1230</address>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14594.145492157728!2d90.3911037!3d23.8705917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d8d8cbae23%3A0xb9d070d503afe8a0!2sESSENTIAL%20-%20INFOTECH!5e0!3m2!1sen!2sbd!4v1710911215016!5m2!1sen!2sbd"
+							width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<section id="footer-area" class="footer-area">
+		<div class="container">
+
+			<div class="footer-list">
+				<div class="row">
+
+				</div>
+
+				<div class="social-content">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="d-flex justify-content-center">
+								<!-- instagram -->
+								<li><a href="https://www.instagram.com/essentialinfotech" target="_blank"><i
+											class="fab fa-instagram"></i></a></li>
+
+								<!-- facebook -->
+								<li><a href="https://www.facebook.com/essentialinfotech" target="_blank"><i
+											class="fab fa-facebook-f"></i></a></li>
+
+								<!-- twitter -->
+								<li><a href="https://www.youtube.com/@essentialinfotech9253" target="_blank"><i
+											class="fab fa-youtube"></i></a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+	<!-- ############################################################################################## -->
+
+
+	<!-- Data Table Minified JS -->
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+	<!-- Data Table Minified Bootstrap JS -->
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
+	<!-- Moment js for Data Table -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+	<!-- Popper -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- bootstrap js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- fontawesome js -->
+	<script src="https://kit.fontawesome.com/f201ec0110.js" crossorigin="anonymous"></script>
+
+	<!-- owl carousel js -->
+	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+	<!-- custom js  -->
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>

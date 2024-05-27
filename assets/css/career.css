@@ -1,0 +1,486 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.banner-area {
+	/*background-image: linear-gradient(to right, #fe8c00 , #f83600);*/
+	position: relative;
+}
+
+/*.banner-area .row{
+	padding-top: 100px;
+}
+*/
+.banner-img {
+	height: 400px;
+}
+
+.banner-content {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.banner-content .hr-1 {
+	width: 60%;
+	height: 4px;
+	background-color: black;
+}
+
+.banner-content .hr-2 {
+	width: 23%;
+	height: 4px;
+	background-color: black;
+}
+
+/*.square-pattern{
+	position: absolute;
+}
+.square-pattern img{
+	position: absolute;
+	right: 0;
+	top: 350px!important;
+	width:25%; 
+}
+
+*/
+
+
+
+.contact-form form input::placeholder {
+	color: silver !important;
+}
+
+.contact-form .form-group {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.contact-form form {
+	/*background-color: silver;*/
+	border: 1px solid silver;
+	padding: 80px;
+}
+
+
+.applicant-apply-btn {
+	margin-top: 50px;
+	padding: 12px 30px;
+	border-radius: 5px;
+	border: none;
+	background-color: #44b66f;
+	z-index: 10 !important;
+	opacity: 1 !important;
+}
+
+.applicant-apply-btn:hover {
+	background-color: #105e2e;
+	color: black;
+}
+
+
+.footer-list a:hover {
+	text-decoration: none !important;
+	color: black !important;
+}
+
+
+
+
+/*##############################################*/
+/*find-parking-table*/
+/*#############################################*/
+
+.career-table {
+	padding-top: 150px !important;
+}
+
+.career-table thead {
+	background-color: #44b66f;
+	color: white;
+}
+
+.career-table button {
+	background-color: #44b66f;
+	border: none;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 5px;
+	text-align: center;
+}
+
+
+.career-table button {
+	padding: 12px 25px;
+}
+
+.career-table button:hover {
+	background-color: #105e2e;
+}
+
+
+
+
+
+
+
+/*##############################################*/
+/* apply now btn | career details*/
+/*#############################################*/
+.apply-now-btn {
+	color: black;
+	font-weight: 600;
+	font-size: 15px;
+	padding: 20px 30px;
+	background-color: #44b66f;
+	border: none;
+	margin-top: 30px;
+}
+
+.apply-now-btn:hover {
+	background-color: #105e2e;
+	text-decoration: none !important;
+	color: black !important;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+	.fixed-top {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: #105e2e;
+	}
+
+	.navbar-toggler {
+		background-color: #105e2e !important;
+	}
+
+}
+
+
+@media screen and (max-width: 575px) {
+	.navbar-toggler {
+		background-color: #105e2e !important;
+	}
+
+	.banner-img {
+		height: auto !important;
+	}
+
+	.fixed-top {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: #105e2e;
+	}
+
+
+
+	/*for data-tabble table customization*/
+	.find-parking-table table td {
+		font-size: 12px !important;
+	}
+
+	.find-parking-table table th {
+		font-size: 14px !important;
+	}
+
+	.find-parking-table button {
+		font-size: 12px !important;
+		padding: 5px !important;
+	}
+
+
+	/*this is datatables pagination class*/
+	.page-link {
+		padding: 0.2rem .5rem !important;
+	}
+
+
+
+
+	/*	.footer-area{
+		padding-top:270px;
+		margin-top: 0px;
+	}
+
+	.get-started-content{
+		padding-bottom: 10px;
+	}
+
+	.footer-list ul li{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.social-content{
+		text-align: center;
+		padding-top: 20px;
+	}
+	.footer-list p{
+		margin-bottom: 8px;
+	}
+
+	.footer-list ul{
+		text-align: center;
+	}*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*############################ New Career Page ########################*/
+h2 {
+	color: #44b66f !important;
+}
+
+.upper-space {
+	padding-top: 50px;
+}
+
+.join-us-career {
+	background-image: url("../img/career.png");
+	/*background-size: 100% 100%;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.about-career {
+	background: linear-gradient(to right, rgba(3, 68, 19, 0.9), rgba(12, 138, 18, 0.8), rgba(32, 146, 65, 0));
+}
+
+.our-team {
+	background: linear-gradient(to right, rgba(3, 68, 19, 0.9), rgba(12, 138, 18, 0.8), rgba(32, 146, 65, 0));
+}
+
+.parkingkoi {
+	background: linear-gradient(to right, rgba(3, 68, 19, 0.9), rgba(12, 138, 18, 0.8), rgba(32, 146, 65, 0));
+}
+
+.benefits {
+	background: linear-gradient(to right, rgba(3, 68, 19, 0.9), rgba(12, 138, 18, 0.8), rgba(32, 146, 65, 0));
+}
+
+
+.about-career,
+.our-team,
+.parkingkoi,
+.benefits {
+	/*background-image:linear-gradient(to right, rgba(34,37,56,0.9), rgba(34,37,56,0.8), rgba(0,0,0,0)), url("../../assets/img/bg.jpg");*/
+	/*background-size: 100% 100%;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.join-us-career-content,
+.about-career-content,
+.our-team-content,
+.parkingkoi-content {
+	padding: 100px 20px;
+	color: white;
+}
+
+.join-us-btn {
+	background-color: #44b66f;
+	padding: 10px 30px;
+	scroll-behavior: smooth;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+
+}
+
+.join-us-btn:hover {
+	color: black;
+	text-decoration: none;
+	background-color: #105e2e;
+}
+
+
+
+
+.video-area {
+	padding: 50px 10px;
+}
+
+
+
+
+
+
+.ceo-info {
+	padding: 100px 30px;
+	/*background-color: #21303E;*/
+	/*background-color: #C1C1C1;*/
+	color: black;
+}
+
+.ceo-info img {
+	border-radius: 50%;
+	/*padding: 10px;*/
+}
+
+.ceo-content {
+	padding-left: 30px;
+	padding-top: 20px;
+}
+
+
+
+.team-gallery {
+	padding: 100px 30px;
+	color: white;
+}
+
+
+
+.map-area {
+	padding: 50px 10px;
+	color: black;
+}
+
+.parkingkoi-address {
+	padding: 30px 10px;
+}
+
+/*.map-area, .map-area p, .map-area address, .map-area u{
+		color: black;
+	}*/
+
+.job-details h6 {
+	font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+
+	.contact-form form {
+		padding: 30px !important;
+	}
+
+	.contact-form ul {
+		padding: 0px;
+	}
+
+	.apply-now-btn {
+		font-weight: 600;
+		font-size: 15px;
+		padding: 12px 22px;
+		background-color: #44b66f;
+		border: none;
+		margin-top: 30px;
+	}
+}
+
+
+/*############################ New Career Page End########################*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*##############################################*/
+/* Millions of job */
+/*#############################################*/
+
+
+/*##############################################*/
+/* Top Company */
+/*#############################################*/
+
+
+/*##############################################*/
+/* Browse jobs by Category */
+/*#############################################*/
+
+
+/*##############################################*/
+/* Come join with us */
+/*#############################################*/
+
+
+/*##############################################*/
+/* Testimonials Area */
+/*#############################################*/
+
+
+/*##############################################*/
+/* Footer Area */
+/*#############################################*/
+
+
+/*####################################################################################*/
+/* FOR SMALL SIZED DEVICES | MAX WIDTH:575PX*/
+/*####################################################################################*/
